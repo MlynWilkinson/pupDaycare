@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <!--
+      CMPL 648
+      Group Project
+
+      Author: Mlyn Wilkinson & Amanda Bates & Ryan Zoucho
+      Date:   09/12/2024
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Get a Quote</title>
+   <link rel="stylesheet" href="styles.css" />
+   <meta http-equiv="Content-Security-Page" content="default-src 'self: script-src 'self 'unsafe-inline':"> 
+   <script src="estCost.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Get A Quote 
+      </h1>
+   </header>
+
+   <article>
+      <h2>
+         Choose the services you would like to receive! 
+      </h2>
+      <form>
+         <input type="checkbox" class="services" id="item1" value="50" />
+         <label for="item1">Grooming ($50)</label> <br>
+         <input type="checkbox" class="services" id="item2" value="35" />
+         <label for="item2">Day Care ($35)</label> <br>
+         <input type="checkbox" class="services" id="item3" value="20" />
+         <label for="item3">30-minute Walk ($20)</label> <br>
+         <input type="checkbox" class="services" id="item4" value="65" />
+         <label for="item4">At Home Pup-sitting ($65)</label> <br>
+         <div id="border"></div>
+         <label>Total Doggy Care Cost</label>
+         <div id="finalCost"></div> 
+      </form>
+      <aside>
+        Total Order Cost: <span id="finalCost">$0</span>
+     </aside> 
+   </article>
+
+</body>
+</html> 
